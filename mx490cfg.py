@@ -75,7 +75,7 @@ def main():
     parser.add_argument("--encryption", default="CCMP", choices=("CCMP", "TKIP"),
                         help="WPA cipher")
     parser.add_argument("--debug", action="store_const", const=True, default=False,
-                        help="Print packages")
+                        help="Print packets")
     args = parser.parse_args()
     set_config(args)
 
